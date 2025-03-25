@@ -643,6 +643,10 @@ footer.sticky-bottom {
     }
   }
 }
+#markdown-content p {
+  text-align: justify;
+  hyphens: auto;
+}
 
 // Distill
 
