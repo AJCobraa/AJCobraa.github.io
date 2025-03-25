@@ -13,7 +13,7 @@ author: Anupam Jose
 
 <!-- This theme supports generating various diagrams from a text description using [mermaid](https://mermaid-js.github.io/mermaid/){:target="\_blank"}. Previously, this was done using the [jekyll-diagrams](https://github.com/zhustec/jekyll-diagrams){:target="\_blank"} plugin. For more information on this matter, see the [related issue](https://github.com/alshedivat/al-folio/issues/1609#issuecomment-1656995674). To disable the zooming feature, set `mermaid.zoomable` to `false` in this post frontmatter. -->
 
-## Early Neural Networks and Backpropagation (1980s):
+### Early Neural Networks and Backpropagation (1980s):
 
 The concept of artificial neural networks (ANNs) dates back to the mid-20th century. Early models like Frank Rosenblatt’s perceptron (1958) could learn simple patterns, but they were limited in scope. In 1969, Marvin Minsky and Seymour Papert published Perceptrons, highlighting that single-layer networks can only learn linearly separable functions, which caused a decline in neural network research in the 1970s​
 [`techttarget`](https://www.techtarget.com/whatis/feature/History-and-evolution-of-machine-learning-A-timeline#:~:text=for%20deep%20learning)
@@ -57,7 +57,7 @@ flowchart TD
 ```
 <hr>
 
-## Recurrent Neural Networks and Long-Term Dependencies (1990s)
+### Recurrent Neural Networks and Long-Term Dependencies (1990s)
 
 As researchers explored new architectures, they developed Recurrent Neural Networks ([`RNNs`](https://arxiv.org/abs/1912.05911)) to handle sequential data (like time series and language). RNNs introduce feedback loops so that past outputs can influence future inputs, giving the network a form of memory. In theory this allowed modeling long-term dependencies, but in practice RNNs were very hard to train on long sequences due to the vanishing gradient problem: as errors were back-propagated through many time steps, the gradient values would shrink exponentially, preventing the network from learning long-range correlations​. In the mid-1990s, this limitation was addressed by the invention of the Long Short-Term Memory (LSTM) network (Hochreiter & Schmidhuber, 1997). LSTM introduced gating mechanisms that let the network decide what to keep or forget, enabling it to preserve information over hundreds or thousands of time steps​. This was a major breakthrough for sequence learning – LSTMs overcame vanishing gradients and soon “set accuracy records in multiple application domains”, becoming the default RNN architecture for tasks like speech recognition​
 [`Wikipedia`](https://en.wikipedia.org/wiki/History_of_artificial_neural_networks#Recurrent_network_architectures#:~:text=Long%20short,default%20choice%20for%20RNN%20architecture)
@@ -65,12 +65,12 @@ As researchers explored new architectures, they developed Recurrent Neural Netwo
 
 <hr>
 
-## Convolutional Neural Networks and the Deep Learning Boom (2010s)
+### Convolutional Neural Networks and the Deep Learning Boom (2010s)
 
 Early vs. modern convolutional networks: The diagram compares the 1990s LeNet-5 CNN (left) to the deeper 2012 AlexNet CNN (right), illustrating how neural networks grew in depth and complexity as more data and compute became available​
 [`Wikipedia`](https://en.wikipedia.org/wiki/AlexNet#:~:text=While%20AlexNet%20and%20LeNet%20share,18)
 
-![Comparison of LeNet-5 and AlexNet architectures]<a href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Comparison_image_neural_networks.svg.jpg" data-lightbox="roadtrip"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Comparison_image_neural_networks.svg" /></a> "Diagram comparing the architectures of LeNet-5 (1998) and AlexNet (2012), showing the increase in depth and complexity."  
+<a href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Comparison_image_neural_networks.svg" data-lightbox="roadtrip"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Comparison_image_neural_networks.svg" /></a> "Diagram comparing the architectures of LeNet-5 (1998) and AlexNet (2012), showing the increase in depth and complexity."  
 
 *Caption: A comparison of LeNet-5 (left) and AlexNet (right), highlighting the evolution of CNN architectures with increased depth and complexity in the 2010s.*
 . Convolutional Neural Networks ([`CNNs`](https://arxiv.org/abs/1511.08458))  were designed to process grid-like data such as images. Inspired by the human visual cortex, CNNs use layers of convolution filters to automatically learn spatial hierarchies of features (edges, shapes, objects) from images. Early CNN work by Yann LeCun in the late 1980s demonstrated that neural nets could recognize handwritten characters (e.g. zip code digits) with high accuracy​. LeCun’s LeNet-5 (1998) is a landmark example, successfully reading handwritten digits. Despite these successes, throughout the 1990s and early 2000s neural networks often failed to outperform more hand-crafted approaches (like SVMs or decision trees) on complex tasks, and many in the research community were skeptical​. Two factors changed this: data and hardware. By the 2010s, much larger labeled datasets became available (e.g. the ImageNet database of millions of images), and graphics processing units (GPUs) allowed the training of bigger, deeper networks. In 2012, a deep CNN known as AlexNet (developed by Hinton, Krizhevsky, and Sutskever) won the ImageNet competition by a huge margin, beating the previous state-of-the-art in image recognition by a significant leap​. This triumph vividly showed the power of deep learning and “triggered an explosion of deep learning research and implementation” across the industry​
@@ -79,7 +79,7 @@ Early vs. modern convolutional networks: The diagram compares the 1990s LeNet-5 
 
 <hr>
 
-## Generative Adversarial Networks (2014) – Generative AI Breakthrough
+### Generative Adversarial Networks (2014) – Generative AI Breakthrough
 
 As neural networks grew more capable, researchers began exploring models that generate new data rather than just recognize it. A milestone in this area was the introduction of Generative Adversarial Networks (GANs) in 2014 by Ian Goodfellow and colleagues​
 [`GAN`](https://arxiv.org/abs/1406.2661)
@@ -121,7 +121,7 @@ Feedback (Loss): Used to improve both Generator and Discriminator.
 
 <hr>
 
-Transformers – “Attention Is All You Need” (2017)
+### Transformers – “Attention Is All You Need” (2017)
 
 In 2017, a single paper fundamentally altered the course of AI research. Google researchers Ashish Vaswani et al. published “Attention Is All You Need,” which introduced the Transformer architecture​
 [`Wikipedia`](https://en.wikipedia.org/wiki/Attention_Is_All_You_Need#:~:text=,was%20on%20improving%20%2060)
@@ -133,7 +133,7 @@ In 2017, a single paper fundamentally altered the course of AI research. Google 
 
 <hr>
 
-Large Language Models and Modern AI Explosion (2018–Present)
+### Large Language Models and Modern AI Explosion (2018–Present)
 
 The introduction of Transformers in 2017 ushered in a period of accelerating progress in AI. One of the first major fruits of this innovation was the rise of large language models (LLMs) built on the Transformer architecture. In 2018, OpenAI released the first Generative Pre-Trained Transformer model, known as GPT-1, demonstrating that a Transformer trained on massive amounts of text could generate fluent passages of natural language​
 [`techttarget`](https://www.techtarget.com/whatis/feature/History-and-evolution-of-machine-learning-A-timeline#:~:text=2018)
