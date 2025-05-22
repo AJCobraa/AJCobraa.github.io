@@ -148,6 +148,8 @@ collections:
     output: true
   projects:
     output: true
+  taskmanager:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
